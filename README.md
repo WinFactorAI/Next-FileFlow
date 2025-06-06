@@ -7,6 +7,11 @@
 ## 项目名称
 Next-FileFlow ​企业轻量级内外网文件审计系统
 
+## 免费体验公测
+扫码进QQ群体验
+![1](./img/qq-next-ff.jpg "点击返回首页")
+
+
 ## 项目描述
 项目介绍
 
@@ -101,4 +106,4 @@ Next-FileFlow ​企业轻量级内外网文件审计系统
 交付发布
 
 
-This is an automated change - 2025-05-28 07:45:58
+This is an automated change - 2025-06-07 07:46:02
