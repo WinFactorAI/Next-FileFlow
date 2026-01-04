@@ -89,9 +89,12 @@ Next-FileFlow ​企业轻量级内外网文件审计系统
 ## 支持渠道
 提供社区支持
 
-微信群支持
+微信群支持  
+添加后回复 ff 
 
 <img src="./img/weixinq-1.jpg" width="30%" style="border: 0px;"> 
+
+
 
 邮件: business@aiputing.com
 
@@ -115,4 +118,4 @@ Next-FileFlow ​企业轻量级内外网文件审计系统
 交付发布
 
 
-This is an automated change - 2026-01-04 11:03:04
+This is an automated change - 2026-01-04 11:34:32
