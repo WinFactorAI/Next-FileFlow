@@ -7,9 +7,11 @@
 ## 项目名称
 Next-FileFlow ​企业轻量级内外网文件审计系统
 
-## 免费体验公测
+## 文档
+[https://doc.aiputing.com/fileflow](https://doc.aiputing.com/fileflow)
+<!-- ## 免费体验公测
 扫码进QQ群体验
-![1](./img/qq-next-ff.jpg "点击返回首页")
+![1](./img/qq-next-ff.jpg "点击返回首页") -->
 
 
 ## 项目描述
@@ -65,11 +67,16 @@ Next-FileFlow ​企业轻量级内外网文件审计系统
 ## 徽章标识
 无
 
+ 
 ## 视觉示例
 ![1](./img/1.png "点击返回首页")
 ![2](./img/2.png "点击返回首页")
+![5](./img/92bb53acaeba4b3fb2f4979c506297e6.jpg "点击返回首页")
+![5](./img/k1.png "点击返回首页")
 ![3](./img/3.png "点击返回首页")
 ![4](./img/4.png "点击返回首页")
+
+
 
 ## 安装指南
 内网独立安装部署请微信扫码知识星球持续完善中。
@@ -83,6 +90,8 @@ Next-FileFlow ​企业轻量级内外网文件审计系统
 提供社区支持
 
 微信群支持
+
+<img src="./img/weixinq-1.jpg" width="30%" style="border: 0px;"> 
 
 邮件: business@aiputing.com
 
@@ -106,4 +115,4 @@ Next-FileFlow ​企业轻量级内外网文件审计系统
 交付发布
 
 
-This is an automated change - 2026-01-03 07:55:02
+This is an automated change - 2026-01-04 11:03:04
