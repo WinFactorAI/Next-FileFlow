@@ -1,0 +1,97 @@
+.login-box {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #ffffff; */
+    /* background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiB2aWV3Qm94PSIwIDAgMTAyNCAzMDAiPgo8ZGVmcz4KPHBhdGggaWQ9InAwIiBkPSJNOTQgNzVjMCAyMSAtNSA2IC0xMSA2UzcxIDk2IDcxIDc1IHMgNSAtNiAxMSAtNiBTIDk0IDUzIDk0IDc1IHoiLz4KPHBhdGggaWQ9InAxIiBkPSJNODU1IDIzOWMwIDM2IC04IDEwIC0xOSAxMFM4MTYgMjc2IDgxNiAyMzlzOCAtMTAgMTkgLTEwUzg1NSAyMDMgODU1IDIzOXoiLz4KPHBhdGggaWQ9InAyIiBkPSJNNzQ2IDE2YzAgMjEgLTUgNiAtMTEgNlM3MjMgMzcgNzIzIDE2czUgLTYgMTEgLTZTNzQ2IC00IDc0NiAxNnoiLz4KPHBhdGggaWQ9InAzIiBkPSJNNzM0IDE2MmMwIDM1IC04IDEwIC0xOSAxMFM2OTYgMTk4IDY5NiAxNjJzOCAtMTAgMTkgLTEwUzczNCAxMjYgNzM0IDE2MnoiLz4KPHBhdGggaWQ9InA0IiBkPSJNMzI3IDIwOGMgMCAyOSAtNyA4IC0xNSA4UzI5NiAyMzcgMjk2IDIwOHM3IC04IDE1IC04UzMyNyAxNzkgMzI3IDIwOHoiLz4KPHBhdGggaWQ9InA1IiBkPSJNMjUxIDE2MWMwIDIxIC01IDYgLTExIDZTMjI4IDE4MyAyMjggMTYxczUgLTYgMTEgLTZTMjUxIDE0MCAyNTEgMTYxeiIvPgo8cGF0aCBpZD0icDYiIGQ9Ik02NzAgMTA4YzAgMzUgLTggMTAgLTE4IDEwUzYzMyAxNDQgNjMzIDEwOHM4IC0xMCAxOCAtMTBTNjcwIDczIDY3MCAxMDh6Ii8+CjxwYXRoIGlkPSJwNyIgZD0iTTQ1IDI2OGMwIDI0IC02IDcgLTEzIDdTMTggMjkzIDE4IDI2OHM2IC03IDEzIC03UzQ1IDI0MyA0NSAyNjh6Ii8+CjxwYXRoIGlkPSJwOCIgZD0iTTkzMSAyNjBjMCAzMyAtOCA5IC0xNyA5Uzg5NSAyOTMgODk1IDI2MHM4IC05IDE3IC05UzkzMSAyMjcgOTMxIDI2MHoiLz4KPHBhdGggaWQ9InA5IiBkPSJNMzcxIDI0YzAgMzYgLTggMTAgLTE5IDEwUzMzMiA2MSAzMzIgMjRzOCAtMTAgMTkgLTEwUzM3MSAtMTEgMzcxIDI0eiIvPgo8L2RlZnM+CjxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSI2IiBmaWxsPSIjZjhiMjZhIj4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii0xcyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3AwIi8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI4IiBmaWxsPSIjYWJiZDgxIj4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii00cyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3AxIi8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI2IiBmaWxsPSIjZTE1YjY0Ij4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii05cyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3AyIi8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI4IiBmaWxsPSIjZjQ3ZTYwIj4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii04cyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3AzIi8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI4IiBmaWxsPSIjZjhiMjZhIj4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii0ycyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3A0Ii8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI4IiBmaWxsPSIjYWJiZDgxIj4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii05cyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3A1Ii8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI4IiBmaWxsPSIjZTE1YjY0Ij4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii0ycyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3A2Ii8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI4IiBmaWxsPSIjZjQ3ZTYwIj4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii0xcyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3A3Ii8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI1IiBmaWxsPSIjZjQ3ZTYwIj4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii0zcyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3A4Ii8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPGNpcmNsZSByPSI5IiBmaWxsPSIjZjQ3ZTYwIj4KPGFuaW1hdGVNb3Rpb24gYmVnaW49Ii05cyIgZHVyPSIxMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggaHJlZj0iI3A5Ii8+PC9hbmltYXRlTW90aW9uPgo8L2NpcmNsZT4KPC9zdmc+Cg==); */
+    /* background-image: url(./access/); */
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-form {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.login-card {
+    position: absolute;
+    /* left: 50%;
+    top: 40%; */
+    left: 75%;
+    top: 50%;
+    margin-left: -175px;
+    margin-top: -189px;
+}
+/* 小屏幕设备（如手机，宽度小于 768px） */
+@media (max-width: 768px) {
+    .login-card {
+        left: 50%;  /* 改为水平居中 */
+        top: 40%;   /* 稍微靠上，避免被键盘遮挡 */
+        margin-left: -175px; 
+        margin-top: -189px;
+    }
+}
+
+.login-xls {
+    position: absolute;
+    left: 36%;
+    top: 23%;
+    width: 120px;
+    animation: float-up-down 5s ease-in-out infinite;
+}
+
+
+.login-pdf {
+    position: absolute;
+    left: 46%;
+    top: 50%;
+    width: 90px;
+    animation: float-up-down 2s ease-in-out infinite;
+}
+
+.login-zip {
+    position: absolute;
+    left: 33%;
+    top: 83%;
+    width: 140px;
+    animation: float-up-down 3s ease-in-out infinite;
+}
+
+.login-docx {
+    position: absolute;
+    left: 6%;
+    top: 33%;
+    width: 132px;
+    animation: float-up-down 4s ease-in-out infinite;
+}
+
+/* 定义浮动动画 */
+@keyframes float-up-down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* 起始和结束位置 */
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* 向上浮动 */
+    }
+}
+
+/* 应用动画 */
+.floating-element {
+    animation: float-up-down 2s ease-in-out infinite;
+    /* 2秒循环，缓动效果 */
+}

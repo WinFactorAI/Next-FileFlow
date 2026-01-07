@@ -1,0 +1,31 @@
+.pie-card .ant-pro-card-body {
+    padding: 0px 16px !important;
+}
+
+.displayMax{
+    display: block ;
+}
+.displayMini{
+    display: none ;
+}
+/* 小屏幕样式（屏幕宽度小于 768px） */
+@media (max-width: 767px) {
+    .row-col-bottom {
+        border-bottom: 1px solid var(--border-color) !important;
+    }
+    .displayMax{
+        display: none !important;
+    }
+    .displayMini{
+        display: block !important;
+    }
+}
+  
+@media (min-width: 768px) {
+    .row-col-right {
+        padding-right: 0px !important;
+    }
+    .row-col-left {
+        padding-left: 0px !important;
+    }
+}

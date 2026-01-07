@@ -1,0 +1,31 @@
+@import '~antd/dist/antd.css';
+
+.container {
+	max-width: 650px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.container div:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.center {
+	text-align: center;
+}
+
+.file-selected {
+	padding-left: 10px;
+	font-style: italic;
+	max-width: 300px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	white-space: nowrap;
+	vertical-align: text-top;
+}
+.file-selected-size {
+	padding-left: 10px;
+	font-weight: 600;
+	font-style: italic;
+}
