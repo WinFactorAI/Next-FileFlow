@@ -1,0 +1,26 @@
+{
+ "data": [
+  {
+   "id": "jina/jina-reranker-test",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "jina",
+   "supported_endpoint_types": [
+    "jina-rerank"
+   ],
+   "name": "Jina Reranker",
+   "description": "rerank",
+   "architecture": {
+    "input_modalities": [
+     "text"
+    ],
+    "output_modalities": [
+     "text"
+    ]
+   },
+   "pricing": {}
+  }
+ ],
+ "object": "list",
+ "success": true
+}
