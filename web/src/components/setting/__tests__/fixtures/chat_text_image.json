@@ -1,0 +1,141 @@
+{
+ "data": [
+  {
+   "id": "anthropic/claude-haiku-4.5",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "Anthropic",
+   "supported_endpoint_types": [
+    "openai",
+    "anthropic"
+   ],
+   "name": "Anthropic: Claude Haiku 4.5",
+   "description": "Claude Haiku 4.5 is Anthropic\u2019s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4\u2019s performance...",
+   "context_length": 200000,
+   "max_completion_tokens": 64000,
+   "architecture": {
+    "input_modalities": [
+     "text",
+     "image",
+     "file"
+    ],
+    "output_modalities": [
+     "text"
+    ]
+   },
+   "top_provider": {
+    "context_length": 200000,
+    "max_completion_tokens": 64000
+   },
+   "pricing": {
+    "prompt": "0.0000010000",
+    "completion": "0.0000050000",
+    "prompt_per_million": "1.000000",
+    "completion_per_million": "5.000000"
+   }
+  },
+  {
+   "id": "openai/gpt-4.1-mini",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "OpenAI",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response"
+   ],
+   "name": "OpenAI: GPT-4.1 Mini",
+   "description": "GPT-4.1 Mini is a mid-sized model delivering performance competitive with GPT-4o at substantially lower latency and cost. It retains a 1 million token context window and scores 45.1% on hard...",
+   "context_length": 1047576,
+   "max_completion_tokens": 32768,
+   "architecture": {
+    "input_modalities": [
+     "image",
+     "text",
+     "file"
+    ],
+    "output_modalities": [
+     "text"
+    ]
+   },
+   "top_provider": {
+    "context_length": 1047576,
+    "max_completion_tokens": 32768
+   },
+   "pricing": {
+    "prompt": "0.0000004000",
+    "completion": "0.0000016000",
+    "prompt_per_million": "0.400000",
+    "completion_per_million": "1.600000"
+   }
+  },
+  {
+   "id": "deepseek/deepseek-chat",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "custom",
+   "supported_endpoint_types": [
+    "openai"
+   ],
+   "name": "DeepSeek: DeepSeek V3",
+   "description": "DeepSeek alias for V4 Flash non-thinking mode \u2014 1M context, strong instruction following and coding (legacy alias, slated for deprecation).",
+   "context_length": 1048576,
+   "max_completion_tokens": 384000,
+   "architecture": {
+    "input_modalities": [
+     "text"
+    ],
+    "output_modalities": [
+     "text"
+    ]
+   },
+   "top_provider": {
+    "context_length": 1048576,
+    "max_completion_tokens": 384000
+   },
+   "pricing": {
+    "prompt": "0.0000001470",
+    "completion": "0.0000002950",
+    "prompt_per_million": "0.147000",
+    "completion_per_million": "0.295000"
+   }
+  },
+  {
+   "id": "google/gemini-2.5-flash",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "Google",
+   "supported_endpoint_types": [
+    "openai",
+    "gemini"
+   ],
+   "name": "Google: Gemini 2.5 Flash",
+   "description": "Gemini 2.5 Flash is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in \"thinking\" capabilities, enabling it to provide responses with greater...",
+   "context_length": 1048576,
+   "max_completion_tokens": 65536,
+   "architecture": {
+    "input_modalities": [
+     "file",
+     "image",
+     "text",
+     "audio",
+     "video"
+    ],
+    "output_modalities": [
+     "text"
+    ]
+   },
+   "top_provider": {
+    "context_length": 1048576,
+    "max_completion_tokens": 65536
+   },
+   "pricing": {
+    "prompt": "0.0000003000",
+    "completion": "0.0000025000",
+    "prompt_per_million": "0.300000",
+    "completion_per_million": "2.500000"
+   }
+  }
+ ],
+ "object": "list",
+ "success": true
+}
