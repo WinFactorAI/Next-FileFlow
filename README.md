@@ -7,6 +7,18 @@
 ## 项目名称
 Next-FileFlow ​企业轻量级内外网文件审计系统
 
+## AI 大模型（OrcaRouter）
+
+设置 → “AI大模型” 支持选择 [OrcaRouter](https://www.orcarouter.ai) 作为服务商。
+OrcaRouter 是面向模型与 Agent 的 OpenAI 兼容 AI 网关，提供自适应路由、自动故障转移、
+零加价推理、可观测性、护栏与 Agent 工具治理；同时在同一端点上为 AI Agent 提供
+网关级零信任安全——对每条 prompt/response 进行筛查，并以默认拒绝的方式治理每次
+工具调用，无需任何应用代码改动。
+
+选择 OrcaRouter 后，模型下拉列表由 OrcaRouter 真实模型目录
+（`https://api.orcarouter.ai/v1/models?capability=chat`）动态生成并按审计内容类型过滤，
+不再手工填写模型字符串。服务商地址固定为 OrcaRouter 网关地址。
+
 ## 文档
 [https://doc.aiputing.com/fileflow](https://doc.aiputing.com/fileflow)
 <!-- ## 免费体验公测

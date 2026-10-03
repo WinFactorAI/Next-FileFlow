@@ -1,0 +1,48 @@
+{
+ "data": [
+  {
+   "id": "openai/text-embedding-3-small",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "custom",
+   "supported_endpoint_types": [
+    "embeddings"
+   ],
+   "architecture": {
+    "input_modalities": [
+     "text"
+    ],
+    "output_modalities": null
+   },
+   "pricing": {
+    "prompt": "0.0000000200",
+    "completion": "0.0000000200",
+    "prompt_per_million": "0.020000",
+    "completion_per_million": "0.020000"
+   }
+  },
+  {
+   "id": "openai/text-embedding-ada-002",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "custom",
+   "supported_endpoint_types": [
+    "embeddings"
+   ],
+   "architecture": {
+    "input_modalities": [
+     "text"
+    ],
+    "output_modalities": null
+   },
+   "pricing": {
+    "prompt": "0.0000001000",
+    "completion": "0.0000001000",
+    "prompt_per_million": "0.100000",
+    "completion_per_million": "0.100000"
+   }
+  }
+ ],
+ "object": "list",
+ "success": true
+}
