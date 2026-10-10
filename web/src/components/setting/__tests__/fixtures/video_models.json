@@ -1,0 +1,26 @@
+{
+ "data": [
+  {
+   "id": "openai/sora-video-test",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "OpenAI",
+   "supported_endpoint_types": [
+    "openai-video"
+   ],
+   "name": "OpenAI: Video",
+   "description": "video",
+   "architecture": {
+    "input_modalities": [
+     "text"
+    ],
+    "output_modalities": [
+     "video"
+    ]
+   },
+   "pricing": {}
+  }
+ ],
+ "object": "list",
+ "success": true
+}
