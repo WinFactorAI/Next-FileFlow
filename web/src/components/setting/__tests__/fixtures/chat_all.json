@@ -1,0 +1,105 @@
+{
+ "data": [
+  {
+   "id": "orcarouter/free",
+   "object": "model",
+   "created": 0,
+   "owned_by": "orcarouter",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response",
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "orcarouter/fusion",
+   "object": "model",
+   "created": 0,
+   "owned_by": "orcarouter",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response",
+    "anthropic",
+    "gemini"
+   ],
+   "context_length": 1000000
+  },
+  {
+   "id": "orcarouter/fusion-flash",
+   "object": "model",
+   "created": 0,
+   "owned_by": "orcarouter",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response",
+    "anthropic",
+    "gemini"
+   ],
+   "context_length": 262144
+  },
+  {
+   "id": "orcarouter/fusion-mini",
+   "object": "model",
+   "created": 0,
+   "owned_by": "orcarouter",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response",
+    "anthropic",
+    "gemini"
+   ],
+   "context_length": 1000000
+  },
+  {
+   "id": "orcarouter/orcacode-review",
+   "object": "model",
+   "created": 1787710835,
+   "owned_by": "orcarouter",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response",
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "orcarouter/open-code",
+   "object": "model",
+   "created": 1785332288,
+   "owned_by": "orcarouter",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response",
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "orcarouter/test-cache-glm52-opus",
+   "object": "model",
+   "created": 1783077694,
+   "owned_by": "orcarouter",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response",
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "orcarouter/simple-test",
+   "object": "model",
+   "created": 1782508092,
+   "owned_by": "orcarouter",
+   "supported_endpoint_types": [
+    "openai",
+    "openai-response",
+    "anthropic",
+    "gemini"
+   ]
+  }
+ ],
+ "object": "list",
+ "success": true
+}
