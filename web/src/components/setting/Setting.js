@@ -7,7 +7,9 @@ import { GetLicense, GetMachineId } from "../../api/license";
 import sensitiveApi from "../../api/sensitive";
 import { server } from "../../common/env";
 import request from "../../common/request";
+import { ORCAROUTER_BASE_URL } from "../../common/orcarouter";
 import { download, getToken } from "../../utils/utils";
+import AiModelSelect from "./AiModelSelect";
 const { Paragraph } = Typography;
 const { Option } = Select;
 const { TabPane } = Tabs;
@@ -49,6 +51,7 @@ class Setting extends Component {
         buttonLoading: false,
         ftpStatusServer: false,
         sensitiveStatusServer: false,
+        aiProvider: 'custom', // 'custom' | 'orcarouter'
         isMini: false // 初始状态
     }
 
@@ -105,6 +108,18 @@ class Setting extends Component {
         }
     }
 
+    handleAiValuesChange = (changedValues) => {
+        if (changedValues['ai-provider'] !== undefined) {
+            const provider = changedValues['ai-provider'];
+            this.setState({ aiProvider: provider });
+            // When the OrcaRouter provider is active its base URL is fixed; it is
+            // not user editable. Keep the persisted value in sync.
+            if (provider === 'orcarouter' && this.aiSettingFormRef.current) {
+                this.aiSettingFormRef.current.setFieldsValue({ 'ai-base-url': ORCAROUTER_BASE_URL });
+            }
+        }
+    }
+
     getProperties = async () => {
 
         let result = await request.get('/properties');
@@ -131,6 +146,13 @@ class Setting extends Component {
                 if (ref.current) {
                     ref.current.setFieldsValue(properties)
                 }
+            }
+
+            // Restore the AI provider selection; keep OrcaRouter's fixed base URL.
+            const aiProvider = properties['ai-provider'] === 'orcarouter' ? 'orcarouter' : 'custom';
+            this.setState({ aiProvider });
+            if (aiProvider === 'orcarouter' && this.aiSettingFormRef.current) {
+                this.aiSettingFormRef.current.setFieldsValue({ 'ai-base-url': ORCAROUTER_BASE_URL });
             }
 
             ftpApi.status().then(status => {
@@ -750,20 +772,22 @@ class Setting extends Component {
                         {/* <Descriptions title=""  column={1}>
                             <Descriptions.Item label={i18next.t('settings.base.hint-label')}>服务器管理是为提供开发与数据库客户端使用TCP方式进行连接Next-dbm的管理配置界面。</Descriptions.Item>
                         </Descriptions> */}
-                        <Form ref={this.aiSettingFormRef} name="ai" onFinish={this.changeProperties} layout="vertical">
-                            {/* <Form.Item
+                        <Form ref={this.aiSettingFormRef} name="ai" onFinish={this.changeProperties} onValuesChange={this.handleAiValuesChange} layout="vertical">
+                            <Form.Item
                                 {...formItemLayout}
-                                name="enable-ai-status"
-                                label="启用AI大模型"
-                                valuePropName="checked"
-                                rules={[
-                                    {
-                                        required: true,
-                                    },
-                                ]}
+                                name="ai-provider"
+                                label="AI 服务商"
+                                initialValue="custom"
+                                tooltip="选择 OrcaRouter 后，模型必须从真实目录中选择，服务器地址固定为 OrcaRouter 网关地址。"
                             >
-                                <Switch checkedChildren="开启" unCheckedChildren="关闭" />
-                            </Form.Item> */}
+                                <Select
+                                    style={{ width: '100%' }}
+                                    options={[
+                                        { value: 'custom', label: '自定义 (OpenAI 兼容)' },
+                                        { value: 'orcarouter', label: 'OrcaRouter' },
+                                    ]}
+                                />
+                            </Form.Item>
                             <Form.Item
                                 {...formItemLayout}
                                 name="ai-base-url"
@@ -775,7 +799,7 @@ class Setting extends Component {
                                     },
                                 ]}
                             >
-                                <Input type='text' placeholder="请输入模型URL" />
+                                <Input type='text' placeholder="请输入模型URL" disabled={this.state.aiProvider === 'orcarouter'} />
                             </Form.Item>
                             <Form.Item
                                 {...formItemLayout}
@@ -798,14 +822,26 @@ class Setting extends Component {
                             >
                                 <Input type='text' placeholder="请输入maxTokens" />
                             </Form.Item>
-                            <Form.Item
-                                {...formItemLayout}
-                                name="ai-model"
-                                label="model"
-                                initialValue="deepseek-coder"
-                            >
-                                <Input type='text' placeholder="请输入model" />
-                            </Form.Item>
+                            {this.state.aiProvider === 'orcarouter' ? (
+                                <Form.Item
+                                    {...formItemLayout}
+                                    name="ai-model"
+                                    label="model"
+                                    tooltip="模型列表来自 OrcaRouter 真实模型目录，按审计内容类型过滤。"
+                                    rules={[{ required: true, message: '请选择模型' }]}
+                                >
+                                    <AiModelSelect />
+                                </Form.Item>
+                            ) : (
+                                <Form.Item
+                                    {...formItemLayout}
+                                    name="ai-model"
+                                    label="model"
+                                    initialValue="deepseek-coder"
+                                >
+                                    <Input type='text' placeholder="请输入model" />
+                                </Form.Item>
+                            )}
                             <Form.Item {...formTailLayout}>
                                 <Button type="primary" htmlType="submit">
                                     更新

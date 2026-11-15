@@ -1,0 +1,46 @@
+{
+ "data": [
+  {
+   "id": "openai/gpt-image-1",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "OpenAI",
+   "supported_endpoint_types": [
+    "image-generation"
+   ],
+   "architecture": {
+    "input_modalities": [
+     "text",
+     "image"
+    ],
+    "output_modalities": null
+   },
+   "pricing": {
+    "prompt": "0.0000050000",
+    "completion": "0.0000400000",
+    "prompt_per_million": "5.000000",
+    "completion_per_million": "40.000000"
+   }
+  },
+  {
+   "id": "google/imagen-4.0-generate-001",
+   "object": "model",
+   "created": 1626777600,
+   "owned_by": "custom",
+   "supported_endpoint_types": [
+    "image-generation"
+   ],
+   "architecture": {
+    "input_modalities": [
+     "text"
+    ],
+    "output_modalities": null
+   },
+   "pricing": {
+    "request": "0.040000"
+   }
+  }
+ ],
+ "object": "list",
+ "success": true
+}
